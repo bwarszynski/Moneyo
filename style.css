@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+/*background*/
+.wrapper{ 
+	background: url(back.png);
+	background-size: cover;
+	height: 100vh;
+}
+/*navigation bar basics*/
+.nav-bar{
+	position: fixed;
+	background: rgba(0,0,0,0.3);
+	height: 90px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+/*logo on nav-bar*/
+.nav-bar .logo{
+	width: 85px;
+	height: auto;
+	padding: 1px 50px;
+}
+/*logo on nav-bar options settings1*/
+.nav-bar ul{
+	float: right;
+	margin-right: 50px;
+}
+/*logo on nav-bar options settings2*/
+.nav-bar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+/*logo on nav-bar options settings3*/
+.nav-bar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+/*logo on nav-bar options colour animation*/
+.nav-bar ul li a.active, .nav-bar ul li a:hover{
+	background: rgb(255, 0, 127);
+	border-radius: 2px;
+}
+/*center text settings*/
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 54%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+/*center text settings1*/
+.center h1{
+	color: rgb(255, 0, 127);
+	font-size: 75px;
+	width: 900px;
+	font-weight: bold;
+	text-align: center;
+}
+/*center text settings2*/
+.center h2{
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+/*center text settings3*/
+.center h3{
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+/*center text settings4*/
+.center h4{
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+/*center text settings5*/
+.center h5{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+/*center buttons settings1*/
+.center .buttons{
+	margin: 35px 280px;
+}
+/*center buttons settings2, animation begin*/
+.buttons button{
+	
+	background-color: var(--background-color);
+	color: rgb(255, 255, 255);
+	padding: .5em 1em;
+	border: none;
+	outline: none;
+	position: relative;
+	cursor: pointer;
+	height: 60px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 750;
+	
+	--border-size: 2px;
+	--background-color: rgb(255, 0, 127);
+	
+}
+/*center buttons sign2 settings*/
+.buttons .btn2{
+	margin-left: 30px;
+}
+/*center buttons sign animation*/
+.buttons button:hover{
+	background: rgb(255, 0, 127);
+}
+/*center buttons sign animation*/
+.buttons button::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	border: var(--border-size) solid var(--background-color);
+	transition: top, left, right, bottom, 100ms ease-in-out;
+}
+/*center buttons sign animation*/
+.buttons button:hover::before,.buttons button:focus::before{
+	top: calc(var(--border-size) * -2);
+	left: calc(var(--border-size) * -2);
+	right: calc(var(--border-size) * -2);
+	bottom: calc(var(--border-size) * -2);
+}
+/*git photo settings*/
+.git{
+	width: 85px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor: pointer;
+}
+/*rgb(37, 132, 255);*/
