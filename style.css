@@ -93,6 +93,11 @@
 	margin-top: 10px;
 	width: 885px;
 	text-align: center;
+	transition: 0.5s;
+}
+.center h4:hover{
+	width: 900px;
+	background-color: rgb(255, 0, 127);
 }
 /*center text settings5*/
 .center h5{
@@ -102,6 +107,11 @@
 	margin-top: 10px;
 	width: 885px;
 	text-align: center;
+	transition: 0.5s;
+}
+.center h5:hover{
+	width: 900px;
+	background-color: rgb(255, 0, 127);
 }
 /*center buttons settings1*/
 .center .buttons{
