@@ -171,4 +171,8 @@
   	margin-right: auto;
 	cursor: pointer;
 }
-/*rgb(37, 132, 255);*/
+/*deleting blue color from a button signIn*/
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
