@@ -9,7 +9,7 @@ body {
     height: 470px;
     margin: 7em auto;
     border-radius: 1.5em;
-    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 11px 35px 2px rgba(255, 0, 127);;
 }
 
 .sign {
@@ -46,7 +46,7 @@ form.form1 {
 
 .pass {
 width: 76%;
-color: rgb(38, 50, 56);
+color: rgb(255, 0, 127);
 font-weight: 700;
 font-size: 14px;
 letter-spacing: 1px;
@@ -74,7 +74,7 @@ font-family: 'Ubuntu', sans-serif;
   cursor: pointer;
     border-radius: 5em;
     color: #fff;
-    background: linear-gradient(to right, #2e2e2e, #555555);
+    background: linear-gradient(to right, rgb(255, 0, 127), rgb(253, 83, 168));
     border: 0;
     padding-left: 40px;
     padding-right: 40px;
@@ -84,6 +84,17 @@ font-family: 'Ubuntu', sans-serif;
     margin-left: 35%;
     font-size: 13px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    
+}
+
+.submit:hover{
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 1,5px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.5s ease 0s;
 }
 
 .forgot {
@@ -118,5 +129,20 @@ a {
     }
     .un:focus, .pass:focus {
         border: 3px solid rgba(0, 0, 0, 0.18);
-        
+    }
+    .arrow{
+        width: 30px;
+        display: block;
+        margin-top: -425px;
+        margin-left: -725px;
+        margin-right: 0px;
+        cursor: pointer;
+    }
+    .arrow2{
+        width: 30px;
+        display: block;
+        margin-top: -500px;
+        margin-left: -725px;
+        margin-right: 0px;
+        cursor: pointer;
     }
